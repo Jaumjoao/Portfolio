@@ -17,6 +17,8 @@ export const MenuSection = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const buttonClass = window.innerWidth > 900 ? 'close' : 'open';
+
     useEffect(() => {
         const handleResize = () => {
             if (typeof window !== 'undefined' && window.innerWidth <= 900) {
@@ -50,7 +52,7 @@ export const MenuSection = () => {
                         <h1 className='font-["Inter"] text-white pl-3 font-medium text-2xl' data-aos="fade-right">João Felipe</h1>
                     </div>
                     <div className="btn-responsive">
-                        <div id="btn" className={`${window.innerWidth > 900 ? 'close' : 'open'}`}>
+                        <div id="btn" className={buttonClass}>
                             <h1 className="text-xl pr-3 text-white">Menu</h1>
                             <button onClick={toggleMenu}>
                                 <img src="./img/menu.png" alt="" className="w-[30px] h-[30px]" />
