@@ -19,18 +19,20 @@ export const MenuSection = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 900) {
+            if (typeof window !== 'undefined' && window.innerWidth <= 900) {
                 setIsMenuOpen(false);
             } else {
                 setIsMenuOpen(true);
             }
         };
 
-        window.addEventListener('resize', handleResize);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
     }, []);
 
     const toggleMenu = () => {
