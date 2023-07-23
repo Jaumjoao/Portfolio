@@ -37,8 +37,9 @@ export const ProjectSection: React.FC = () => {
   return (
     <section id='projects' className='h-screen w-screen'>
       <div id="container" className="w-[90%] m-auto flex flex-col h-screen justify-evenly">
-        <div id="titleProjects" className="h-[100px] flex justify-center items-center text-4xl font-bold text-[#F5F4FC]">
+        <div id="titleProjects" className="flex flex-col justify-evenly items-center text-4xl font-bold text-[#F5F4FC] h-[170px]">
           <h1 className=''>Alguns dos meus projetos</h1>
+          <p className='text-white text-center text-lg font-normal pt-3'>Nesta página, você encontrará alguns dos meus projetos que fiz ao longo dos meus aprendizados.</p>
         </div>
         <div>
           <Slider {...carouselSettings}>

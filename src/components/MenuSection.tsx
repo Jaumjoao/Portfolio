@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import * as AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../css/responsiveMenu.css'
+import '../css/responsive.css'
 import { MenuResponsive } from "./MenuResponsive";
 
 export const MenuSection = () => {
@@ -48,7 +48,7 @@ export const MenuSection = () => {
                         <h1 className='font-["Inter"] text-white pl-3 font-medium text-2xl' data-aos="fade-right">João Felipe</h1>
                     </div>
                     <div className="btn-responsive">
-                        <div id="btn">
+                        <div id="btn" className={`${window.innerWidth > 900 ? 'close' : 'open'}`}>
                             <h1 className="text-xl pr-3 text-white">Menu</h1>
                             <button onClick={toggleMenu}>
                                 <img src="./img/menu.png" alt="" className="w-[30px] h-[30px]" />
@@ -100,7 +100,7 @@ export const MenuSection = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="menu-responsive">
+                <div className={`${isMenuOpen ? 'flex' : 'hidden'} ${window.innerWidth > 900 ? 'close' : 'open'} menu-responsive`}>
                     <div id="menu-content">
                         {isMenuOpen && (
                             <MenuResponsive />
@@ -110,8 +110,8 @@ export const MenuSection = () => {
                 <div id="content" className='grid grid-cols-2 max-w-[90%] w-full text-white'>
                     <div id="description" className='flex flex-col justify-around' data-aos-offset="200">
                         <div id="apresentation">
-                            <h1 className='text-4xl font-bold leading-[50px]' data-aos="fade-up">Seja Bem Vindo,</h1>
-                            <h1 className='text-4xl font-bold leading-[50px]' data-aos="fade-up">Eu sou o <span className='text-[#FFCC00]'>João Felipe</span></h1>
+                            <h1 className='text-4xl font-bold leading-[50px] title-responsive' data-aos="fade-up">Seja Bem Vindo,</h1>
+                            <h1 className='text-4xl font-bold leading-[50px] title-responsive' data-aos="fade-up">Eu sou o <span className='text-[#FFCC00]'>João Felipe</span></h1>
                             <p className='text-xl font-light leading-[50px]' data-aos="fade-up">Veja Meu portifólio</p>
                         </div>
                         <div id="btn">
