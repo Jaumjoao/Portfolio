@@ -2,45 +2,42 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import * as AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../css/responsive.css'
+import '../css/responsive.css';
 import { MenuResponsive } from "./MenuResponsive";
 
 export const MenuSection = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            offset: 100,
-            easing: 'ease-in-out',
-        });
-        AOS.refresh();
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      easing: 'ease-in-out',
+    });
+    AOS.refresh();
+  }, []);
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const buttonClass = window.innerWidth > 900 ? 'close' : 'open';
-
-    useEffect(() => {
-        const handleResize = () => {
-            if (typeof window !== 'undefined' && window.innerWidth <= 900) {
-                setIsMenuOpen(false);
-            } else {
-                setIsMenuOpen(true);
-            }
-        };
-
-        if (typeof window !== 'undefined') {
-            window.addEventListener('resize', handleResize);
-
-            return () => {
-                window.removeEventListener('resize', handleResize);
-            };
-        }
-    }, []);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 900) {
+        setIsMenuOpen(false);
+      } else {
+        setIsMenuOpen(true);
+      }
     };
 
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const buttonClass = window.innerWidth > 900 ? 'close' : 'open';
 
 
     return (
