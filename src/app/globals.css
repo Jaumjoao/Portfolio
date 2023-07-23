@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,13 +17,22 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#home{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(165deg, #141414 50%, #FFCC00 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+#about,
+#skill,
+#projects,
+#contact {
+  min-height: 100vh;
+}
+
+
+

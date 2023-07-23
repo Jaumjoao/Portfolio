@@ -1,0 +1,44 @@
+.btn-responsive, .menu-responsive {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  /* Estilo para ocultar o menu quando o menu não estiver aberto */
+  #nav {
+    display: none;
+  }
+
+
+  .btn-responsive {
+    display: flex;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  #btn{
+    display: flex;
+  }
+
+  .menu-responsive{
+    display: flex;
+    transform: translateY(56px);
+    position: absolute;
+    width: 95vw;
+    height: 200px;
+    z-index: 1;
+  }
+  #menu-content, #menu-content ul{
+    width: 100%;
+  }
+
+  #menu-content ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    color: white;
+  }
+
+  #menu-content a{
+    padding: 20px;
+  }
+}
