@@ -4,8 +4,9 @@ import * as AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../css/responsive.css';
 import { MenuResponsive } from "./MenuResponsive";
+import { useMediaQuery } from '@react-hook/media-query';
 
-export const MenuSection = () => {
+export const MenuSection: React.FC = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,27 +18,17 @@ export const MenuSection = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const isDesktop: boolean = useMediaQuery("(min-width: 900px)");
+
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 900) {
-        setIsMenuOpen(false);
-      } else {
-        setIsMenuOpen(true);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+    setIsMenuOpen(isDesktop);
+  }, [isDesktop]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const buttonClass = window.innerWidth > 900 ? 'close' : 'open';
+  const buttonClass: string = isDesktop ? 'close' : 'open';
 
 
     return (
