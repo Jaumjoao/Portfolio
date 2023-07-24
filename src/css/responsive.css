@@ -2,12 +2,27 @@
   display: none;
 }
 
+.btn-open {
+  display: block;
+}
+
+.btn-close {
+  display: none;
+}
+
 @media (max-width: 900px) {
   /* Estilo para ocultar o menu quando o menu não estiver aberto */
   #nav {
     display: none;
   }
 
+    .btn-open {
+    display: none;
+  }
+
+  .btn-close {
+    display: block;
+  }
 
   .btn-responsive {
     display: flex;
