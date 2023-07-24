@@ -28,7 +28,7 @@ export const MenuSection: React.FC = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const buttonClass: string = `transition ${isDesktop ? 'btn-close' : 'btn-open'}`;
+    const buttonClass: string = `transition ${isDesktop ? 'btn-open' : 'btn-close'}`;
 
 
     return (
