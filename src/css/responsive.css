@@ -1,7 +1,9 @@
 .close {
   display: none;
 }
-
+#btn{
+  display: none;
+}
 .btn-open {
   display: block;
 }
@@ -119,14 +121,47 @@
   #content #img-content{
     margin: auto;
   }
+  #about{
+    height: auto;
+  }
+  #apresentation h1{
+    text-align: center;
+    font-size: 25px;
+  }
+  #apresentation p{
+    font-size: 20px;
+  }
   #home .index{
     align-items: baseline;
+  }
+  #part2 .img-content{
+    padding: 10px;
+  }
+  #part2 p{
+    padding: 10px;
   }
   #skill h1{
     margin-bottom: 20px;
   }
   #skills{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  #skill #card{
+    width: 100px;
+    height: 110px;
+  }
+  #skill #card img{
+    width: 30px;
+  }
+  #skill #card h1{
+    font-size: 13px;
+  }
+  #title h1{
+    font-size: 30px;
+  }
+  #title p{
+    font-size: 13px;
   }
   #projects h1{
     font-size: 25px;
