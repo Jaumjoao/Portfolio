@@ -103,8 +103,8 @@ export const MenuSection: React.FC = () => {
                     <div id="description" className='flex flex-col justify-around' data-aos-offset="200">
                         <div id="apresentation">
                             <h1 className='text-4xl font-bold leading-[50px] title-responsive' data-aos="fade-up">Seja Bem Vindo,</h1>
-                            <h1 className='text-4xl font-bold leading-[50px] title-responsive' data-aos="fade-up">Eu sou o <span className='text-[#FFCC00]'>João Felipe</span></h1>
-                            <p className='text-xl font-light leading-[50px]' data-aos="fade-up">Veja Meu portifólio</p>
+                            <h1 className='text-4xl font-bold leading-[50px] title-responsive' data-aos="fade-up">Meu nome é <span className='text-[#FFCC00]'>João Felipe</span></h1>
+                            <p className='text-xl font-light leading-[50px]' data-aos="fade-up">Sou um desenvolvedor web fullstack</p>
                         </div>
                         <div id="btn">
                             <button className="rounded-full p-4 bg-[#FDA60A] transform transition-transform duration-300 ease-in-out hover:scale-110 font-bold">Saiba mais sobre mim</button>

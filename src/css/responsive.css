@@ -124,6 +124,9 @@
   #about{
     height: auto;
   }
+  #apresentation p{
+    text-align: center;
+  }
   #apresentation h1{
     text-align: center;
     font-size: 25px;

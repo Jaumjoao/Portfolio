@@ -69,7 +69,7 @@ export const ContatoSection = () => {
                     <div className="cardContact bg-[#1b1b1b] h-[200px] w-[250px] flex flex-col justify-evenly items-center">
                         <img src={isCopiedTel ? './img/ok.png' : './img/tel.png'} alt="" className="h-auto w-[50px]"/>
                         <p>Clique para copiar</p>
-                        <p>(45) 9 9999-9999</p>
+                        <p>{telCopy}</p>
                     </div>
                   </div>
                     

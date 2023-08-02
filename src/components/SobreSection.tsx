@@ -26,11 +26,11 @@ export const SobreSection = () => {
                         <h1 className="text-center text-6xl font-bold title-responsive">Sobre mim</h1>
                     </div>
                     <div className="myDescription text-white">
-                        <h2 className="text-center text-3xl font-normal desc-responsive">Meu nome é João Felipe Ribeiro da Silva, tenho 19 anos e sou natural de Cascavel, Paraná. </h2>
+                        <h2 className="text-center text-2xl font-normal desc-responsive">Meu nome é João Felipe Ribeiro da Silva, tenho 19 anos e sou natural de Cascavel, Paraná. </h2>
                     </div>
                     <div className="text text-white">
-                        <p>Desde cedo, descobri minha paixão pela área da programação e venho me dedicando      constantemente a aprimorar meus conhecimentos nesse campo emocionante.
-                            Sou formado em Técnico em Informática e durante meu curso, tive a oportunidade de mergulhar no mundo da programação, explorando diferentes linguagens e tecnologias. A cada linha de código que escrevo, sinto uma empolgação única, pois enxergo a capacidade transformadora que a programação possui.
+                        <p>
+                        Desde cedo, descobri minha paixão pela programação e me dedico constantemente a aprimorar meus conhecimentos nesse campo emocionante. A cada linha de código que escrevo, sinto uma empolgação única, enxergando a transformação que a programação oferece.
                         </p>
                     </div>
                 </div>
@@ -41,7 +41,9 @@ export const SobreSection = () => {
                         <img id="img" src="./img/img-programing.png" alt="" className="w-1/2 h-auto shadow-black shadow-[8px_8px_10px_rgba(0,0,0,0.75)] transition-transform duration-300 ease-in-out transform-gpu hover:scale-105" />
                     </div>
                     <div className="text">
-                        <p>Meus hobbies incluem jogar bola, desfrutar de jogos eletrônicos, passar tempo de qualidade com minha família e acompanhar os jogos do meu time de coração. Meu primeiro contato com a programação foi na escola, onde me formei como técnico em informática. Foi durante o primeiro ano, na disciplina de lógica de programação, que tive conhecimento sobre a existência de profissionais nessa área. Essa descoberta abriu um mundo de oportunidades para mim, e desde então venho me dedicando a estudar e aprimorar minhas habilidades cada vez mais. Daqui a cinco anos, tenho a visão de mim mesmo como um profissional excelente, atuando como desenvolvedor sênior fullstack. Estou empenhado em alcançar esse objetivo e sei que o caminho para o sucesso demandará dedicação, aprendizado contínuo e trabalho árduo. Estou ansioso para enfrentar os desafios que virão pela frente e contribuir de forma significativa no campo da tecnologia.</p>
+                        <p>
+                            Meus hobbies incluem jogar bola, desfrutar de jogos eletrônicos, passar tempo com minha família e acompanhar os jogos do meu time de coração. Meu primeiro contato com a programação foi na escola, onde me formei como técnico em informática. Na disciplina de lógica de programação, descobri a existência de profissionais nessa área, abrindo um mundo de oportunidades. Desde então, venho me dedicando a estudar e aprimorar minhas habilidades. Em cinco anos, me vejo como um desenvolvedor sênior fullstack, comprometido com o aprendizado contínuo e o trabalho árduo. Estou animado para enfrentar desafios e contribuir significativamente no campo da tecnologia.
+                        </p>
                     </div>
                 </div>
 
