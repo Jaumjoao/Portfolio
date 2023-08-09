@@ -11,3 +11,7 @@
 - Obrigado por visitar meu Portfólio, e espero que você desfrute da jornada tecnológica apresentada aqui!
 ##
 ### Link: <a href="https://portfolio-joao-felipe.vercel.app/" target="_blank">View</a>
+
+
+
+
